@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.App{
+    width: 350px;
+    padding: 5%;
+    height: 100%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: 30%;
+}
+
+.links a{
+margin-top: 20px;
+    background: darkblue;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+form{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 2px 2px 1px rgba(133, 130, 130, 0.692);
+    width: 400px;
+    border-radius: 10px;
+}
