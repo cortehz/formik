@@ -34,7 +34,11 @@ const validate = values => {
 
   if (!values.country) {
     errors.country = "Required";
-  } 
+  }
+  
+  if (!values.checkbox) {
+    errors.checkbox = "You need to accept our terms and condition to proceed";
+  }
 
   if (!values.email) {
     errors.email = "Required";
@@ -53,7 +57,7 @@ const SignUp = () => {
       email: "",
       country: "",
       city: "",
-      acceptedTerms: false
+      checkbox: false
     },
     validate,
     onSubmit: values => {
@@ -147,6 +151,21 @@ const SignUp = () => {
       ) : formik.touched.country && !formik.errors.country ? (
         < FaCheck/>
       ) : null}
+
+<div style={{display:"flex", alignItems:"center", marginTop:"10px"}}>
+<input
+        id="checkbox"
+        name="checkbox"
+        type="checkbox"
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        value={formik.values.checkbox}
+      /><div>I agree to terms and conditions</div>
+</div>
+{formik.touched.checkbox && formik.errors.checkbox ? (
+        <div className="errorDiv">{formik.errors.checkbox}</div>
+      ) : null}
+
       <button type="submit">Create Account</button>
 
       <p style={{textAlign:"center"}}>Have an account <Link to="/signin">Click here</Link> </p>

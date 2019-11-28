@@ -6,6 +6,9 @@ body,html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  background-image: url(https://live.staticflickr.com/4328/35203036394_b9650b0f5c_b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #root {
