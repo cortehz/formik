@@ -9,6 +9,7 @@ body,html {
   background-image: url(https://live.staticflickr.com/4328/35203036394_b9650b0f5c_b.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #root {

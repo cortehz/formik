@@ -1,6 +1,5 @@
 import React from 'react';
 import { useFormik } from "formik";
-import PhoneInput from "react-phone-number-input";
 import { CountryDropdown } from 'react-country-region-selector';
 import { FaCheck } from 'react-icons/fa';
 import "./styles.css";
