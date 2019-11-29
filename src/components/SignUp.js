@@ -42,6 +42,8 @@ const SignUp = () => {
       alert(JSON.stringify(values, null, 2));
     }
   });
+
+
   return (
     <form onSubmit={formik.handleSubmit}>
       <h1 style={{textAlign:"center", fontSize:"35px", fontWeight: 500}}>Sign Up</h1>
@@ -101,7 +103,7 @@ const SignUp = () => {
 {formik.touched.checkbox && formik.errors.checkbox ? (
         <div className="errorDiv">{formik.errors.checkbox}</div>
       ) : null}
-      <button style={{marginTop:"10%"}} type="submit">Login</button>
+      <button style={{marginTop:"10%"}} type="submit">Create Account</button>
 
       <p style={{textAlign:"center"}}>Have an account <Link to="/signin">Click here</Link> </p>
     </form>

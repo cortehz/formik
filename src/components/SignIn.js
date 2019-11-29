@@ -1,6 +1,5 @@
 import React from 'react';
 import { useFormik } from "formik";
-import { CountryDropdown } from 'react-country-region-selector';
 import { FaCheck } from 'react-icons/fa';
 import "./styles.css";
 import {Link} from 'react-router-dom';
