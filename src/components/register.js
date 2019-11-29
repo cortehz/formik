@@ -54,7 +54,7 @@ const validate = values => {
   return errors;
 };
 
-const SignUp = () => {
+const Register = () => {
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -199,4 +199,4 @@ const SignUp = () => {
 
 
 
-export default SignUp;
+export default Register;

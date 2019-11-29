@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
-import register from './register'
+import Register from './Register'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -16,7 +16,7 @@ const Main = () => (
       <Route exact path='/' component={Home}/>
       <Route path='/signin' component={SignIn}/>
       <Route path='/signup' component={SignUp}/>
-      <Route path='/register' component={register}/>
+      <Route path='/register' component={Register}/>
     </Switch>
   </main>
 )
