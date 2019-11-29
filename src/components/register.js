@@ -34,6 +34,12 @@ const validate = values => {
   if (!values.country) {
     errors.country = "Required";
   }
+
+  if (!values.mobile) {
+    errors.mobile = "Required";
+  } else if (values.mobile.length < 10 ) {
+    errors.mobile = "Please Enter a valid mobile number";
+  }
   
   if (!values.checkbox) {
     errors.checkbox = "You need to accept our terms and condition to proceed";
@@ -57,6 +63,7 @@ const SignUp = () => {
       state:"",
       country: "",
       city: "",
+      mobile:"",
       checkbox: false
     },
     validate,
@@ -149,6 +156,21 @@ const SignUp = () => {
        {formik.touched.country && formik.errors.country ? (
         <div className="errorDiv">{formik.errors.country}</div>
       ) : formik.touched.country && !formik.errors.country ? (
+        < FaCheck/>
+      ) : null}
+
+<label htmlFor="address">Mobile Number</label>
+      <input
+        id="mobile"
+        name="mobile"
+        type="number"
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        value={formik.values.mobile}
+      />
+      {formik.touched.mobile && formik.errors.mobile ? (
+        <div className="errorDiv">{formik.errors.mobile}</div>
+      ) : formik.touched.mobile && !formik.errors.mobile ? (
         < FaCheck/>
       ) : null}
 
