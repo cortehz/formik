@@ -106,6 +106,7 @@ const SignUp = () => {
       <button style={{marginTop:"10%"}} type="submit">Create Account</button>
 
       <p style={{textAlign:"center"}}>Have an account <Link to="/signin">Click here</Link> </p>
+      <p style={{textAlign:"center"}}>Have an account <Link to="/register">Click here</Link> </p>
     </form>
   );
 };
