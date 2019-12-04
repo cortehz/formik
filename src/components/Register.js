@@ -103,20 +103,6 @@ const Register = () => {
       ) : formik.touched.address && !formik.errors.address ? (
         < FaCheck/>
       ) : null}
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        value={formik.values.email}
-      />
-      {formik.touched.email && formik.errors.email ? (
-        <div className="errorDiv">{formik.errors.email}</div>
-      ) : formik.touched.email && !formik.errors.email ? (
-        < FaCheck/>
-      ) : null}
 
 <label htmlFor="address">City</label>
       <input
@@ -156,18 +142,19 @@ const Register = () => {
        {formik.touched.country && formik.errors.country ? (
         <div className="errorDiv">{formik.errors.country}</div>
       ) : formik.touched.country && !formik.errors.country ? (
-        < FaCheck/>
+        < FaCheck className="country-svg"/>
       ) : null}
 
 <label htmlFor="address">Mobile Number</label>
       <input
         id="mobile"
         name="mobile"
-        type="number"
+        type="tel"
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values.mobile}
       />
+      <label className="phone-number">+234 |</label>
       {formik.touched.mobile && formik.errors.mobile ? (
         <div className="errorDiv">{formik.errors.mobile}</div>
       ) : formik.touched.mobile && !formik.errors.mobile ? (

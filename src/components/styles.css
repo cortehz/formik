@@ -186,7 +186,8 @@
   input[type="email"],
   input[type="text"],
   input[type="number"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="tel"] {
     padding: 0.65rem 0.5rem;
     font-size: 1rem;
     border: 0;
@@ -206,6 +207,22 @@
     float: right;
     position: absolute;
     margin-left: -25px;
+    margin-top: 10px;
+    color: green;
+  }
+
+.phone-number{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -35px;
+    font-size: 1rem;
+    color: var(--gray-800);
+}
+
+  .country-svg{
+    float: right;
+    position: absolute;
+    margin-left: -50px;
     margin-top: 10px;
     color: green;
   }
@@ -231,6 +248,7 @@
   input[type="email"],
   input[type="text"],
   input[type="number"],
+  input[type="tel"],
   textarea,
   select {
     width: 400px;
@@ -541,8 +559,12 @@
     overflow: scroll;
   }
 
-  #mobile{
-    background-image: url();
+  input[type="tel"] {
+    background-image: url('https://i.imgur.com/UVY5797.png');
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: center left 0.5rem;
+    padding-left: 80px;
   }
   
   /* Forces a new-line at the end of a code block for layout purposes. */
@@ -655,6 +677,7 @@
   input[type="text"],
   input[type="number"],
   input[type="password"],
+  input[type="tel"],
   
   textarea,
   select {
