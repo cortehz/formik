@@ -46,7 +46,7 @@ const SignUp = () => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <h1 style={{textAlign:"center", fontSize:"35px", fontWeight: 500}}>Sign Up</h1>
+      <h1 style={{textAlign:"center", fontSize:"35px", fontWeight: 400, letterSpacing: "0.2px"}}>Sign Up</h1>
       <label htmlFor="fullName">Username</label>
       <input
         id="username"
@@ -103,9 +103,9 @@ const SignUp = () => {
 {formik.touched.checkbox && formik.errors.checkbox ? (
         <div className="errorDiv">{formik.errors.checkbox}</div>
       ) : null}
-      <button style={{marginTop:"10%"}} type="submit">Create Account</button>
+      <button style={{marginTop:"10%"}} ><Link to="/register">Create Account</Link></button>
 
-      <p style={{textAlign:"center"}}><Link to="/register">Continue</Link> </p>
+      {/* <p style={{textAlign:"center"}}><Link to="/register">Continue</Link> </p> */}
 
       <p style={{textAlign:"center"}}>Have an account <Link to="/signin">Click here</Link> </p>
       

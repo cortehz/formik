@@ -15,8 +15,8 @@ const validate = values => {
 
   if (!values.address) {
     errors.address = "Required";
-  } else if (values.address.length > 25) {
-    errors.address = "Must be 25 characters or less";
+  } else if (values.address.length > 40) {
+    errors.address = "Must be 40 characters or less";
   }
 
   if (!values.city) {
@@ -73,7 +73,7 @@ const Register = () => {
   });
   return (
     <form onSubmit={formik.handleSubmit}>
-      <h1 style={{textAlign:"center", fontSize:"35px", fontWeight: 500}}>Register</h1>
+      <h1 style={{textAlign:"center", fontSize:"30px", fontWeight: 400, letterSpacing:"0.2px"}}>Register</h1>
       <label htmlFor="fullName">Full Name</label>
       <input
         id="fullName"

@@ -36,7 +36,7 @@ const SignIn = () => {
   });
   return (
     <form onSubmit={formik.handleSubmit}>
-      <h1 style={{textAlign:"center", fontSize:"35px", fontWeight: 500}}>Log In</h1>
+      <h1 style={{textAlign:"center", fontSize:"30px", fontWeight: 400, letterSpacing: "0.2px"}}>Log In</h1>
       <label htmlFor="fullName">Username or Email</label>
       <input
         id="email"
