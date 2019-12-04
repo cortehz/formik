@@ -540,6 +540,10 @@
     margin-bottom: 1.563rem;
     overflow: scroll;
   }
+
+  #mobile{
+    background-image: url();
+  }
   
   /* Forces a new-line at the end of a code block for layout purposes. */
   pre > code::after {
